@@ -1,0 +1,22 @@
+.pizza-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.pizza-stack {
+    position: relative;
+    width: 450px;
+    height: 450px;
+}
+
+.pizza-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}

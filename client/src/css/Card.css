@@ -1,31 +1,54 @@
 .card {
-    background: white;
+    background-color: white;
     color: #222;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
 }
 
-.card h3 {
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Make ALL text inside the card dark */
+.card * {
     color: #222;
+}
+
+.card-header {
+    text-align: center;
     margin-bottom: 1rem;
 }
 
-.card p {
-    color: #444;
+.card-header h2 {
+    margin: 0;
+    color: #d35400;
+}
+
+.card-body p {
     margin: 0.5rem 0;
 }
 
-.card strong {
-    color: #222;
+.card-body ul {
+    margin-top: 0.5rem;
+    padding-left: 1.25rem;
 }
 
-.card h4 {
+.card-body li {
+    margin: 0.25rem 0;
+}
+
+.card-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.card-footer h3 {
     color: #d35400;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .card a {
     display: inline-block;
-    margin-top: 1rem;
 }

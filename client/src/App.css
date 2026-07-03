@@ -1,5 +1,5 @@
 .app {
-    background: url('./assets/background.jpg');
+    background: url('./assets/pizzabackground.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,4 +15,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+}
+
+.builder-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.builder-form {
+    width: 450px;
 }
